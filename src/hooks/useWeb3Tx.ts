@@ -21,7 +21,7 @@ type web3Options = {
   failureMessage?: string;
   callback?: () => void;
   intendedBlockchain?: Hex;
-  sponsored?: Boolean;
+  sponsored?: boolean;
 };
 
 const useWeb3Tx = () => {

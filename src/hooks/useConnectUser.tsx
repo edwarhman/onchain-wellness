@@ -256,7 +256,7 @@ const useConnectUser = () => {
     dispatchStack.push(setExchangeRates(await getCoingeckoRates()));
     dispatchStack.push(setConnectedChain(loginData.blockchain));
 
-    let willUpdateUserData = false;
+    const willUpdateUserData = false;
 
     try {
       // Check if user exists in DB
